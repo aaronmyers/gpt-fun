@@ -83,9 +83,6 @@ from torch import nn
 
 loss_func = F.cross_entropy
 
-def model_F(xb):
-    return xb @ weights + bias
-
 class Mnist_Logistic(nn.Module):
 
     def __init__(self):
@@ -97,3 +94,64 @@ class Mnist_Logistic(nn.Module):
         return xb @ self.weights + self.bias
 
 mnist_model = Mnist_Logistic()
+
+def fit(input_model):
+    for epoch in range(epochs):
+        for i in range((n - 1) // bs + 1):
+            start_i = i * bs
+            end_i = start_i + bs
+            xb = x_train[start_i:end_i]
+            yb = y_train[start_i:end_i]
+            pred = input_model(xb)
+            loss = loss_func(pred, yb)
+
+            loss.backward()
+            with torch.no_grad():
+                for p in input_model.parameters():
+                    p -= p.grad * lr
+                input_model.zero_grad()
+
+fit(mnist_model)
+print(loss_func(mnist_model(xb), yb))
+
+
+### USING nn.Linear
+
+class Mnist_Logistic2(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.lin = nn.Linear(784, 10)
+
+    def forward(self, xb):
+        return self.lin(xb)
+
+final_model = Mnist_Logistic2()
+
+fit(final_model)
+print(loss_func(final_model(xb), yb))
+
+## USING torch optim
+
+from torch import optim
+
+def get_model():
+    model = Mnist_Logistic2()
+    return model, optim.SGD(model.parameters(), lr=lr)
+
+model3, opt = get_model()
+print(loss_func(model3(xb), yb))
+
+for epoch in range(epochs):
+    for i in range((n - 1) // bs + 1):
+        start_i = i * bs
+        end_i = start_i + bs
+        xb = x_train[start_i:end_i]
+        yb = y_train[start_i:end_i]
+        pred = model3(xb)
+        loss = loss_func(pred, yb)
+
+        loss.backward()
+        opt.step()
+        opt.zero_grad()
+
+print(loss_func(model3(xb), yb))
