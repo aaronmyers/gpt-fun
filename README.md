@@ -126,9 +126,46 @@ Coment t
 Well, this is...better? It is better at grasping the script format and there are SOME real words in there. Let's increase the parameter count.
 
 
-3. 5 million parameters:
+3. 3.6 million parameters, 5000 training steps:
+
+Output:
 
 ```
+3.695681 M parameters
+step 0: train loss 4.3467, val loss 4.3441
+step 500: train loss 1.7172, val loss 1.8691
+step 1000: train loss 1.5225, val loss 1.7265
+step 1500: train loss 1.4380, val loss 1.6635
+step 2000: train loss 1.3804, val loss 1.6276
+step 2500: train loss 1.3329, val loss 1.5926
+step 3000: train loss 1.3032, val loss 1.5715
+step 3500: train loss 1.2868, val loss 1.5762
+step 4000: train loss 1.2734, val loss 1.5691
+step 4500: train loss 1.2542, val loss 1.5705
+step 4999: train loss 1.2383, val loss 1.5605
+
+Senon't here own.
+
+
+QUEEN MARGARET:
+Fear me this mine own. This and bud arms of you
+Beforth.
+
+GLOUCESTER:
+Why, we'll matter I adventant you misgursed fore?
+
+KING EDWARD IV:
+Therefof York.
+
+KIs Oxford, to your heir lordshire's shall not leight with wad.
+Thou bloody death not was,, the queen is a full yarr.
+
+GLOUCESTER:
+Man him; for look there very
+Matuntion ben timelecters us, bred nerieve to to his he,
+Are to Clarence out heirs. Has, my sorrows
+But banish blame and let the royal welcome here,
+Th
 
 ```
 
