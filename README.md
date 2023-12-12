@@ -303,4 +303,6 @@ Here is
 
 ```
 
-6. 
+6. 42.7 million parameters, 8,000 training steps:
+
+
