@@ -128,7 +128,24 @@ Well, this is...better? It is better at grasping the script format and there are
 
 3. 3.6 million parameters, 5000 training steps:
 
-Output:
+### Input:
+```
+batch_size = 64 # how many independent sequences will we process in parallel?
+block_size = 256 # what is the maximum context length for predictions?
+max_iters = 5000
+eval_interval = 500
+learning_rate = 3e-4
+device = 'mps' #running on a mac M1 chip and want to use gpu
+eval_iters = 200
+n_embd = 384
+n_head = 2
+n_layer = 2
+dropout = 0.2
+
+```
+
+
+### Output:
 
 ```
 3.695681 M parameters
