@@ -259,6 +259,47 @@ dropout = 0.2
 
 ## Output:
 ```
+21.428801 M parameters
+step 0: train loss 4.3112, val loss 4.3210
+step 500: train loss 1.9159, val loss 2.0204
+step 1000: train loss 1.4057, val loss 1.6085
+step 1500: train loss 1.2402, val loss 1.5061
+step 2000: train loss 1.1399, val loss 1.4772
+step 2500: train loss 1.0533, val loss 1.4919
+step 3000: train loss 0.9591, val loss 1.5144
+step 3500: train loss 0.8595, val loss 1.5688
+step 4000: train loss 0.7581, val loss 1.6402
+step 4500: train loss 0.6597, val loss 1.7168
+step 4999: train loss 0.5574, val loss 1.8041
+
+
+RIVERS:
+Romeo! madam, lay'st thou lake not where.
+
+QUEEN:
+But I have forgot that heart's sake.
+How now, sweet reason, that I should not stay;
+For by any hours ear minister.
+
+runage:
+The senators and women's fire joints are taken
+Makes Lovel amazable two why I that your spotted lady.
+
+Lord:
+Amen.
+
+Second Murderer:
+I saw you him.
+
+CATESBY:
+A little man have at your country and the people,
+colourer; a match, being feast, I would there's beats.
+
+First Murderer:
+My believes is not so.
+
+SLY:
+Here is
 
 ```
 
