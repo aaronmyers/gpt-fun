@@ -14,8 +14,8 @@ learning_rate = 3e-4
 device = 'mps' #running on a mac M1 chip and want to use gpu
 eval_iters = 200
 n_embd = 384
-n_head = 6
-n_layer = 6
+n_head = 12
+n_layer = 12
 dropout = 0.2
 # ------------
 

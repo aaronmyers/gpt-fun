@@ -208,5 +208,33 @@ dropout = 0.2
 
 ## Output:
 ```
+10.788929 M parameters
+step 0: train loss 4.2221, val loss 4.2306
+step 500: train loss 1.7449, val loss 1.9065
+step 1000: train loss 1.3934, val loss 1.6012
+step 1500: train loss 1.2631, val loss 1.5233
+step 2000: train loss 1.1869, val loss 1.5130
+step 2500: train loss 1.1197, val loss 1.4873
+step 3000: train loss 1.0710, val loss 1.4810
+step 3500: train loss 1.0172, val loss 1.4981
+step 4000: train loss 0.9627, val loss 1.5118
+step 4500: train loss 0.9142, val loss 1.5426
+step 4999: train loss 0.8590, val loss 1.5666
+
+a lie one another thing there was to be spoken;
+On what by-father's coffinds I saw yours,
+That's full of sour ride?
+
+COMINIUS:
+It may be.
+How are the modest senate's corn;
+The voice of you read, and you content:
+A present to private your person which finds
+Live us in a crotten from fasting go to-dinner;
+Commidiation when they were enough bound,
+And thou deputy forth? Once bulishre,
+In earth, whose littes of contomplace care
+Into simputatishing of the king suit
+And whose absence refer the dire du
 
 ```
