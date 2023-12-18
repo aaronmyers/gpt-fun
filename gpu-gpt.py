@@ -11,11 +11,11 @@ block_size = 256 # what is the maximum context length for predictions?
 max_iters = 8000
 eval_interval = 500
 learning_rate = 3e-4
-device = 'mps' #running on a mac M1 chip and want to use gpu
+device = 'cpu' #running on a mac M1 chip and want to use gpu
 eval_iters = 200
 n_embd = 384
-n_head = 24
-n_layer = 24
+n_head = 2
+n_layer = 2
 dropout = 0.2
 # ------------
 
