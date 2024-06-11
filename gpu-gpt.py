@@ -8,14 +8,14 @@ import code
 # hyperparameters
 batch_size = 64 # how many independent sequences will we process in parallel?
 block_size = 256 # what is the maximum context length for predictions?
-max_iters = 8000
+max_iters = 5000
 eval_interval = 500
 learning_rate = 3e-4
-device = 'cpu' #running on a mac M1 chip and want to use gpu
+device = 'cuda' #want to use gpu
 eval_iters = 200
 n_embd = 384
-n_head = 2
-n_layer = 2
+n_head = 16
+n_layer = 16
 dropout = 0.2
 # ------------
 

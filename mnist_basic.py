@@ -75,6 +75,7 @@ for epoch in range(epochs):
             weights.grad.zero_()
             bias.grad.zero_()
 
+print("loss function and accuracy for training without torch models")
 print(loss_func(model(xb), yb), accuracy(model(xb), yb))
 
 ### USING Functional torch
