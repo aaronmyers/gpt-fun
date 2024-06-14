@@ -30,7 +30,7 @@ n, c = x_train.shape
 
 bs = 64 # batch size
 lr = 0.5 #learning reatee
-epochs = 2 # number of training steps
+epochs = 4 # number of training steps
 
 weights = torch.randn(784, 10) / math.sqrt(784)
 weights.requires_grad_()
@@ -156,3 +156,10 @@ for epoch in range(epochs):
         opt.zero_grad()
 
 print(loss_func(model3(xb), yb))
+
+print("predictions")
+print(model3(xb))
+print("actual")
+print(yb)
+import code
+code.interact(local=locals())
