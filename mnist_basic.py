@@ -26,7 +26,7 @@ x_train, y_train, x_valid, y_valid = map(
 n, c = x_train.shape
 
 
-#### WITHOUT torch
+#### WITHOUT torch (except using their tensor data class)
 
 bs = 64 # batch size
 lr = 0.5 #learning reatee
