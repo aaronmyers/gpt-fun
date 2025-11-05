@@ -8,10 +8,11 @@ import code
 # hyperparameters
 batch_size = 64 # how many independent sequences will we process in parallel?
 block_size = 256 # what is the maximum context length for predictions?
-max_iters = 6000
+max_iters = 2000
 eval_interval = 500
 learning_rate = 3e-4
-device = 'cuda' #want to use gpu
+#device = 'cuda' #want to use gpu
+device = 'mps' #want to use gpu
 eval_iters = 200
 n_embd = 384
 n_head = 16
@@ -228,7 +229,10 @@ if __name__ == "__main__":
     print(decode(m.generate(context, max_new_tokens=500)[0].tolist()))
     
     
-    torch.save(model.state_dict(),"/home/aaronmyers/professional/gpt-fun/shakespeare2.pt")
+    try:
+        torch.save(model.state_dict(),"/home/aaronmyers/professional/gpt/shakespeare2.pt")
+    except:
+        print('failed to save model')
     #open('more.txt', 'w').write(decode(m.generate(context, max_new_tokens=10000)[0].tolist()))
     #last one
     code.interact(local=locals())
